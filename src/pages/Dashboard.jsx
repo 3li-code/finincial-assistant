@@ -29,7 +29,7 @@ export default function Dashboard() {
     <>
       <div className="topbar">
         <div className="page-title">
-          <h2>مرحباً بك، {state.settings.name}</h2>
+          <h2>{state.settings.name ? `مرحباً بك، ${state.settings.name}` : 'مرحباً بك'}</h2>
           <p>إليك وضعك المالي اليوم — لك · عليك · القادم</p>
         </div>
         <span className="chip">الصحة المالية {engine.score}/100</span>
